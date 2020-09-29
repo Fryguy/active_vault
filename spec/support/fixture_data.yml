@@ -2,3 +2,7 @@
   key: read_test
   value:
     value: read_test_value
+- namespace: active_vault_tests
+  key: write_test
+  value:
+    value: write_test_value

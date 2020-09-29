@@ -40,7 +40,7 @@ module ActiveVault::Adapters
 
     def write(namespace, name, contents)
       wrapping_exceptions do
-        raw_connection.kv(namespace).write(name, contents).data
+        raw_connection.kv(namespace).write(name, contents)
       end
     end
 

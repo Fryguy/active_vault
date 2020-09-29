@@ -1,0 +1,163 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8200/v1/active_vault_tests/data/write_test_new
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      - application/json
+      User-Agent:
+      - Ruby
+      - VaultRuby/0.15.0 (+github.com/hashicorp/vault-ruby)
+      Content-Type:
+      - application/json
+      X-Vault-Token:
+      - smartvm
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '30'
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-store
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Sep 2020 20:51:26 GMT
+      Content-Length:
+      - '14'
+    body:
+      encoding: UTF-8
+      string: '{"errors":[]}
+
+        '
+  recorded_at: Tue, 29 Sep 2020 20:51:26 GMT
+- request:
+    method: post
+    uri: http://localhost:8200/v1/active_vault_tests/data/write_test_new
+    body:
+      encoding: UTF-8
+      string: '{"data":{"value":"write_test_new_value"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      - application/json
+      User-Agent:
+      - Ruby
+      - VaultRuby/0.15.0 (+github.com/hashicorp/vault-ruby)
+      Content-Type:
+      - application/json
+      X-Vault-Token:
+      - smartvm
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '30'
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Cache-Control:
+      - no-store
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Sep 2020 20:51:26 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 29 Sep 2020 20:51:26 GMT
+- request:
+    method: get
+    uri: http://localhost:8200/v1/active_vault_tests/data/write_test_new
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      - application/json
+      User-Agent:
+      - Ruby
+      - VaultRuby/0.15.0 (+github.com/hashicorp/vault-ruby)
+      Content-Type:
+      - application/json
+      X-Vault-Token:
+      - smartvm
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '30'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Sep 2020 20:51:26 GMT
+      Content-Length:
+      - '205'
+    body:
+      encoding: UTF-8
+      string: '{"request_id":"de9fd12e-ed8b-7564-5861-3f1f187981e0","lease_id":"","renewable":false,"lease_duration":2764800,"data":{"data":{"value":"write_test_new_value"}},"wrap_info":null,"warnings":null,"auth":null}
+
+        '
+  recorded_at: Tue, 29 Sep 2020 20:51:26 GMT
+- request:
+    method: delete
+    uri: http://localhost:8200/v1/active_vault_tests/data/write_test_new
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      - application/json
+      User-Agent:
+      - Ruby
+      - VaultRuby/0.15.0 (+github.com/hashicorp/vault-ruby)
+      Content-Type:
+      - application/json
+      X-Vault-Token:
+      - smartvm
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '30'
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Cache-Control:
+      - no-store
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Sep 2020 20:51:26 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 29 Sep 2020 20:51:26 GMT
+recorded_with: VCR 6.0.0
