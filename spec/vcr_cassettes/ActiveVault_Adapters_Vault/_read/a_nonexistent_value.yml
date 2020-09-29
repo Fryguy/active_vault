@@ -33,7 +33,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 21:01:15 GMT
+      - Tue, 29 Sep 2020 21:54:28 GMT
       Content-Length:
       - '14'
     body:
@@ -41,5 +41,5 @@ http_interactions:
       string: '{"errors":[]}
 
         '
-  recorded_at: Tue, 29 Sep 2020 21:01:15 GMT
+  recorded_at: Tue, 29 Sep 2020 21:54:28 GMT
 recorded_with: VCR 6.0.0

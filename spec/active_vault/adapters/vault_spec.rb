@@ -52,7 +52,7 @@ RSpec.describe ActiveVault::Adapters::Vault, :vcr do
       exists = connection.list(namespace).include?(key)
       connection.write(namespace, key, original_value) # Restore
 
-      expect(exists).to eq false
+      expect(exists).to eq true
     end
 
     it "a nonexistent value" do

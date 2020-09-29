@@ -33,13 +33,13 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 21:01:15 GMT
+      - Tue, 29 Sep 2020 21:54:28 GMT
       Content-Length:
       - '294'
     body:
       encoding: UTF-8
-      string: '{"initialized":true,"sealed":false,"standby":false,"performance_standby":false,"replication_performance_mode":"disabled","replication_dr_mode":"disabled","server_time_utc":1601413275,"version":"1.4.2","cluster_name":"vault-cluster-0f29c0da","cluster_id":"4bb86cd9-6322-3f84-a92e-56703fae9c5e"}
+      string: '{"initialized":true,"sealed":false,"standby":false,"performance_standby":false,"replication_performance_mode":"disabled","replication_dr_mode":"disabled","server_time_utc":1601416468,"version":"1.4.2","cluster_name":"vault-cluster-16f50f41","cluster_id":"fbd8705e-9908-df36-ae25-2440192a9e54"}
 
         '
-  recorded_at: Tue, 29 Sep 2020 21:01:15 GMT
+  recorded_at: Tue, 29 Sep 2020 21:54:28 GMT
 recorded_with: VCR 6.0.0

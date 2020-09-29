@@ -33,9 +33,9 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 21:01:15 GMT
+      - Tue, 29 Sep 2020 21:54:28 GMT
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Tue, 29 Sep 2020 21:01:15 GMT
+  recorded_at: Tue, 29 Sep 2020 21:54:28 GMT
 recorded_with: VCR 6.0.0
