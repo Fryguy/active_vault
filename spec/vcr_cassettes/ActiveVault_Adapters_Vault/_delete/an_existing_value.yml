@@ -33,15 +33,15 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 20:58:03 GMT
+      - Tue, 29 Sep 2020 21:01:15 GMT
       Content-Length:
       - '202'
     body:
       encoding: UTF-8
-      string: '{"request_id":"0db075c5-3856-056d-089f-4728bec4d138","lease_id":"","renewable":false,"lease_duration":2764800,"data":{"data":{"value":"delete_test_value"}},"wrap_info":null,"warnings":null,"auth":null}
+      string: '{"request_id":"47f542ae-0888-643b-2b48-b22df75e17f0","lease_id":"","renewable":false,"lease_duration":2764800,"data":{"data":{"value":"delete_test_value"}},"wrap_info":null,"warnings":null,"auth":null}
 
         '
-  recorded_at: Tue, 29 Sep 2020 20:58:03 GMT
+  recorded_at: Tue, 29 Sep 2020 21:01:15 GMT
 - request:
     method: delete
     uri: http://localhost:8200/v1/active_vault_tests/data/delete_test
@@ -75,11 +75,11 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 20:58:03 GMT
+      - Tue, 29 Sep 2020 21:01:15 GMT
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Tue, 29 Sep 2020 20:58:03 GMT
+  recorded_at: Tue, 29 Sep 2020 21:01:15 GMT
 - request:
     method: get
     uri: http://localhost:8200/v1/active_vault_tests/metadata/?list=true
@@ -113,7 +113,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 20:58:03 GMT
+      - Tue, 29 Sep 2020 21:01:15 GMT
       Content-Length:
       - '14'
     body:
@@ -121,7 +121,7 @@ http_interactions:
       string: '{"errors":[]}
 
         '
-  recorded_at: Tue, 29 Sep 2020 20:58:03 GMT
+  recorded_at: Tue, 29 Sep 2020 21:01:15 GMT
 - request:
     method: post
     uri: http://localhost:8200/v1/active_vault_tests/data/delete_test
@@ -155,9 +155,9 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 20:58:03 GMT
+      - Tue, 29 Sep 2020 21:01:15 GMT
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Tue, 29 Sep 2020 20:58:03 GMT
+  recorded_at: Tue, 29 Sep 2020 21:01:15 GMT
 recorded_with: VCR 6.0.0

@@ -5,11 +5,11 @@ RSpec.describe ActiveVault::Adapters::Vault, :vcr do
   let(:connection) { described_class.new("address" => address, "token" => token) }
 
   describe "#read" do
-    it "when the value exists" do
+    it "an existing value" do
       expect(connection.read(namespace, "read_test")).to eq(:value => "read_test_value")
     end
 
-    it "when the value does not exist" do
+    it "a nonexistent value" do
       expect(connection.read(namespace, "foo")).to be_nil
     end
   end
@@ -55,7 +55,7 @@ RSpec.describe ActiveVault::Adapters::Vault, :vcr do
       expect(exists).to eq false
     end
 
-    it "an nonexistent value" do
+    it "a nonexistent value" do
       expect(connection.delete(namespace, "foo")).to eq true
     end
   end

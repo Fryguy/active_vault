@@ -1,7 +1,7 @@
 ---
 http_interactions:
 - request:
-    method: get
+    method: delete
     uri: http://localhost:8200/v1/active_vault_tests/data/foo
     body:
       encoding: US-ASCII
@@ -25,21 +25,17 @@ http_interactions:
       - '30'
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 204
+      message: No Content
     headers:
       Cache-Control:
       - no-store
       Content-Type:
       - application/json
       Date:
-      - Mon, 28 Sep 2020 22:29:26 GMT
-      Content-Length:
-      - '14'
+      - Tue, 29 Sep 2020 21:01:15 GMT
     body:
       encoding: UTF-8
-      string: '{"errors":[]}
-
-        '
-  recorded_at: Mon, 28 Sep 2020 22:29:26 GMT
+      string: ''
+  recorded_at: Tue, 29 Sep 2020 21:01:15 GMT
 recorded_with: VCR 6.0.0

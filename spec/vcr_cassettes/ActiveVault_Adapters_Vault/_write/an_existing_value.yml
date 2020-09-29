@@ -33,15 +33,15 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 20:51:26 GMT
+      - Tue, 29 Sep 2020 21:01:15 GMT
       Content-Length:
       - '201'
     body:
       encoding: UTF-8
-      string: '{"request_id":"774427dd-b028-e4cf-b9b3-6a696b239f39","lease_id":"","renewable":false,"lease_duration":2764800,"data":{"data":{"value":"write_test_value"}},"wrap_info":null,"warnings":null,"auth":null}
+      string: '{"request_id":"27abec24-71a2-92e7-98c9-529d55ba85d8","lease_id":"","renewable":false,"lease_duration":2764800,"data":{"data":{"value":"write_test_value"}},"wrap_info":null,"warnings":null,"auth":null}
 
         '
-  recorded_at: Tue, 29 Sep 2020 20:51:26 GMT
+  recorded_at: Tue, 29 Sep 2020 21:01:15 GMT
 - request:
     method: post
     uri: http://localhost:8200/v1/active_vault_tests/data/write_test
@@ -75,11 +75,11 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 20:51:26 GMT
+      - Tue, 29 Sep 2020 21:01:15 GMT
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Tue, 29 Sep 2020 20:51:26 GMT
+  recorded_at: Tue, 29 Sep 2020 21:01:15 GMT
 - request:
     method: get
     uri: http://localhost:8200/v1/active_vault_tests/data/write_test
@@ -113,15 +113,15 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 20:51:26 GMT
+      - Tue, 29 Sep 2020 21:01:15 GMT
       Content-Length:
       - '205'
     body:
       encoding: UTF-8
-      string: '{"request_id":"130a1cb6-9719-b253-2a02-7b692292722c","lease_id":"","renewable":false,"lease_duration":2764800,"data":{"data":{"value":"new_write_test_value"}},"wrap_info":null,"warnings":null,"auth":null}
+      string: '{"request_id":"0e4a8a70-34e8-3279-9a4b-6648df2f606c","lease_id":"","renewable":false,"lease_duration":2764800,"data":{"data":{"value":"new_write_test_value"}},"wrap_info":null,"warnings":null,"auth":null}
 
         '
-  recorded_at: Tue, 29 Sep 2020 20:51:26 GMT
+  recorded_at: Tue, 29 Sep 2020 21:01:15 GMT
 - request:
     method: post
     uri: http://localhost:8200/v1/active_vault_tests/data/write_test
@@ -155,9 +155,9 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 20:51:26 GMT
+      - Tue, 29 Sep 2020 21:01:15 GMT
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Tue, 29 Sep 2020 20:51:26 GMT
+  recorded_at: Tue, 29 Sep 2020 21:01:15 GMT
 recorded_with: VCR 6.0.0
