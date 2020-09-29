@@ -6,3 +6,7 @@
   key: write_test
   value:
     value: write_test_value
+- namespace: active_vault_tests
+  key: delete_test
+  value:
+    value: delete_test_value

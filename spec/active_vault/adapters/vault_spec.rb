@@ -41,6 +41,25 @@ RSpec.describe ActiveVault::Adapters::Vault, :vcr do
     end
   end
 
+  describe "#delete" do
+    it "an existing value" do
+      key   = "delete_test"
+      value = {:value => "delete_test_value"}
+      original_value = connection.read(namespace, key)
+      expect(original_value).to eq(value)
+
+      expect(connection.delete(namespace, key)).to eq true
+      exists = connection.list(namespace).include?(key)
+      connection.write(namespace, key, original_value) # Restore
+
+      expect(exists).to eq false
+    end
+
+    it "an nonexistent value" do
+      expect(connection.delete(namespace, "foo")).to eq true
+    end
+  end
+
   it "#version" do
     expect(connection.version).to eq("1.4.2")
   end
