@@ -50,6 +50,12 @@ module ActiveVault::Adapters
       end
     end
 
+    def destroy(namespace, name)
+      wrapping_exceptions do
+        raw_connection.kv(namespace).destroy(name)
+      end
+    end
+
     def list(namespace)
       wrapping_exceptions do
         raw_connection.kv(namespace).list

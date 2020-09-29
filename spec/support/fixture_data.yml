@@ -10,3 +10,7 @@
   key: delete_test
   value:
     value: delete_test_value
+- namespace: active_vault_tests
+  key: destroy_test
+  value:
+    value: destroy_test_value

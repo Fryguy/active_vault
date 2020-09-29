@@ -22,7 +22,7 @@ RSpec.describe ActiveVault::Adapters::Vault, :vcr do
 
       connection.write(namespace, key, value)
       written_value = connection.read(namespace, key)
-      connection.delete(namespace, key) # Restore
+      connection.destroy(namespace, key) # Restore
 
       expect(written_value).to eq value
     end
@@ -58,6 +58,30 @@ RSpec.describe ActiveVault::Adapters::Vault, :vcr do
     it "a nonexistent value" do
       expect(connection.delete(namespace, "foo")).to eq true
     end
+  end
+
+  describe "#destroy" do
+    it "an existing value" do
+      key   = "destroy_test"
+      value = {:value => "destroy_test_value"}
+      original_value = connection.read(namespace, key)
+      expect(original_value).to eq(value)
+
+      expect(connection.destroy(namespace, key)).to eq true
+      exists = connection.list(namespace).include?(key)
+      connection.write(namespace, key, original_value) # Restore
+
+      expect(exists).to eq false
+    end
+
+    it "a nonexistent value" do
+      expect(connection.destroy(namespace, "foo")).to eq true
+    end
+  end
+
+  it "#list" do
+    keys = fixture_data.map { |c| c["key"] }
+    expect(connection.list(namespace)).to match_array(keys)
   end
 
   it "#version" do

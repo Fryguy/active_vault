@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8200/v1/active_vault_tests/metadata/?list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      - application/json
+      User-Agent:
+      - Ruby
+      - VaultRuby/0.15.0 (+github.com/hashicorp/vault-ruby)
+      Content-Type:
+      - application/json
+      X-Vault-Token:
+      - smartvm
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '30'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 29 Sep 2020 21:56:08 GMT
+      Content-Length:
+      - '222'
+    body:
+      encoding: UTF-8
+      string: '{"request_id":"d83107e0-241f-2cfc-d7ef-56d56c6db895","lease_id":"","renewable":false,"lease_duration":0,"data":{"keys":["delete_test","destroy_test","read_test","write_test"]},"wrap_info":null,"warnings":null,"auth":null}
+
+        '
+  recorded_at: Tue, 29 Sep 2020 21:56:08 GMT
+recorded_with: VCR 6.0.0

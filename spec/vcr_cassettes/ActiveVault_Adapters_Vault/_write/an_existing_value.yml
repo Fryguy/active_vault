@@ -33,15 +33,15 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 21:54:28 GMT
+      - Tue, 29 Sep 2020 21:56:08 GMT
       Content-Length:
       - '303'
     body:
       encoding: UTF-8
-      string: '{"request_id":"f8a19d3d-50a3-f001-799d-e7b6b1e2e069","lease_id":"","renewable":false,"lease_duration":0,"data":{"data":{"value":"write_test_value"},"metadata":{"created_time":"2020-09-29T21:54:23.7935807Z","deletion_time":"","destroyed":false,"version":1}},"wrap_info":null,"warnings":null,"auth":null}
+      string: '{"request_id":"e91373fe-f852-05d1-a52b-6018218bd169","lease_id":"","renewable":false,"lease_duration":0,"data":{"data":{"value":"write_test_value"},"metadata":{"created_time":"2020-09-29T21:56:04.1313637Z","deletion_time":"","destroyed":false,"version":1}},"wrap_info":null,"warnings":null,"auth":null}
 
         '
-  recorded_at: Tue, 29 Sep 2020 21:54:28 GMT
+  recorded_at: Tue, 29 Sep 2020 21:56:08 GMT
 - request:
     method: post
     uri: http://localhost:8200/v1/active_vault_tests/data/write_test
@@ -75,15 +75,15 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 21:54:28 GMT
+      - Tue, 29 Sep 2020 21:56:08 GMT
       Content-Length:
       - '254'
     body:
       encoding: UTF-8
-      string: '{"request_id":"ef0a5358-0942-2b9b-4af9-5eb68a169435","lease_id":"","renewable":false,"lease_duration":0,"data":{"created_time":"2020-09-29T21:54:28.9122672Z","deletion_time":"","destroyed":false,"version":2},"wrap_info":null,"warnings":null,"auth":null}
+      string: '{"request_id":"015cf1db-4175-501f-c52a-9101f6dbf2dd","lease_id":"","renewable":false,"lease_duration":0,"data":{"created_time":"2020-09-29T21:56:08.5774211Z","deletion_time":"","destroyed":false,"version":2},"wrap_info":null,"warnings":null,"auth":null}
 
         '
-  recorded_at: Tue, 29 Sep 2020 21:54:28 GMT
+  recorded_at: Tue, 29 Sep 2020 21:56:08 GMT
 - request:
     method: get
     uri: http://localhost:8200/v1/active_vault_tests/data/write_test
@@ -117,15 +117,15 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 21:54:28 GMT
+      - Tue, 29 Sep 2020 21:56:08 GMT
       Content-Length:
       - '307'
     body:
       encoding: UTF-8
-      string: '{"request_id":"503c30e5-9f77-ccdb-429f-a2219cadf862","lease_id":"","renewable":false,"lease_duration":0,"data":{"data":{"value":"new_write_test_value"},"metadata":{"created_time":"2020-09-29T21:54:28.9122672Z","deletion_time":"","destroyed":false,"version":2}},"wrap_info":null,"warnings":null,"auth":null}
+      string: '{"request_id":"09df5f35-e518-58e4-fb1a-c166b5f0766a","lease_id":"","renewable":false,"lease_duration":0,"data":{"data":{"value":"new_write_test_value"},"metadata":{"created_time":"2020-09-29T21:56:08.5774211Z","deletion_time":"","destroyed":false,"version":2}},"wrap_info":null,"warnings":null,"auth":null}
 
         '
-  recorded_at: Tue, 29 Sep 2020 21:54:28 GMT
+  recorded_at: Tue, 29 Sep 2020 21:56:08 GMT
 - request:
     method: post
     uri: http://localhost:8200/v1/active_vault_tests/data/write_test
@@ -159,13 +159,13 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 29 Sep 2020 21:54:28 GMT
+      - Tue, 29 Sep 2020 21:56:08 GMT
       Content-Length:
       - '254'
     body:
       encoding: UTF-8
-      string: '{"request_id":"6130282b-f919-3e15-846a-39362f30ba3a","lease_id":"","renewable":false,"lease_duration":0,"data":{"created_time":"2020-09-29T21:54:28.9321742Z","deletion_time":"","destroyed":false,"version":3},"wrap_info":null,"warnings":null,"auth":null}
+      string: '{"request_id":"ab2de677-d4fd-e1ae-d0b7-d7e0fce64353","lease_id":"","renewable":false,"lease_duration":0,"data":{"created_time":"2020-09-29T21:56:08.5890123Z","deletion_time":"","destroyed":false,"version":3},"wrap_info":null,"warnings":null,"auth":null}
 
         '
-  recorded_at: Tue, 29 Sep 2020 21:54:28 GMT
+  recorded_at: Tue, 29 Sep 2020 21:56:08 GMT
 recorded_with: VCR 6.0.0

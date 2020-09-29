@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8200/v1/active_vault_tests/data/delete_test
+    uri: http://localhost:8200/v1/active_vault_tests/data/destroy_test
     body:
       encoding: US-ASCII
       string: ''
@@ -35,16 +35,16 @@ http_interactions:
       Date:
       - Tue, 29 Sep 2020 21:56:08 GMT
       Content-Length:
-      - '304'
+      - '301'
     body:
       encoding: UTF-8
-      string: '{"request_id":"9de0d6ca-aeb7-fac6-eda7-f59e0b79ed30","lease_id":"","renewable":false,"lease_duration":0,"data":{"data":{"value":"delete_test_value"},"metadata":{"created_time":"2020-09-29T21:56:04.1339827Z","deletion_time":"","destroyed":false,"version":1}},"wrap_info":null,"warnings":null,"auth":null}
+      string: '{"request_id":"b63c1251-09f4-7d65-967d-91c8bc72fa7a","lease_id":"","renewable":false,"lease_duration":0,"data":{"data":{"value":"destroy_test_value"},"metadata":{"created_time":"2020-09-29T21:56:04.137Z","deletion_time":"","destroyed":false,"version":1}},"wrap_info":null,"warnings":null,"auth":null}
 
         '
   recorded_at: Tue, 29 Sep 2020 21:56:08 GMT
 - request:
     method: delete
-    uri: http://localhost:8200/v1/active_vault_tests/data/delete_test
+    uri: http://localhost:8200/v1/active_vault_tests/metadata/destroy_test
     body:
       encoding: US-ASCII
       string: ''
@@ -115,19 +115,19 @@ http_interactions:
       Date:
       - Tue, 29 Sep 2020 21:56:08 GMT
       Content-Length:
-      - '222'
+      - '207'
     body:
       encoding: UTF-8
-      string: '{"request_id":"3ef810a0-12ba-eea1-56a1-aca076bed84b","lease_id":"","renewable":false,"lease_duration":0,"data":{"keys":["delete_test","destroy_test","read_test","write_test"]},"wrap_info":null,"warnings":null,"auth":null}
+      string: '{"request_id":"2c9c6cd8-6037-de27-5a5b-25bf30f3f771","lease_id":"","renewable":false,"lease_duration":0,"data":{"keys":["delete_test","read_test","write_test"]},"wrap_info":null,"warnings":null,"auth":null}
 
         '
   recorded_at: Tue, 29 Sep 2020 21:56:08 GMT
 - request:
     method: post
-    uri: http://localhost:8200/v1/active_vault_tests/data/delete_test
+    uri: http://localhost:8200/v1/active_vault_tests/data/destroy_test
     body:
       encoding: UTF-8
-      string: '{"data":{"value":"delete_test_value"}}'
+      string: '{"data":{"value":"destroy_test_value"}}'
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -160,7 +160,7 @@ http_interactions:
       - '254'
     body:
       encoding: UTF-8
-      string: '{"request_id":"189a40bc-5e3c-d237-ff15-f378a2eee8f7","lease_id":"","renewable":false,"lease_duration":0,"data":{"created_time":"2020-09-29T21:56:08.6149352Z","deletion_time":"","destroyed":false,"version":2},"wrap_info":null,"warnings":null,"auth":null}
+      string: '{"request_id":"46aaad13-db16-a7b7-7d9b-3e8adc8624da","lease_id":"","renewable":false,"lease_duration":0,"data":{"created_time":"2020-09-29T21:56:08.5430189Z","deletion_time":"","destroyed":false,"version":1},"wrap_info":null,"warnings":null,"auth":null}
 
         '
   recorded_at: Tue, 29 Sep 2020 21:56:08 GMT
