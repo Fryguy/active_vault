@@ -22,6 +22,16 @@ module ActiveVault::Adapters
       @raw_connection = ::Vault::Client.new(options)
     end
 
+    def valid?
+      !!health_status
+    rescue
+      false
+    end
+
+    def version
+      health_status.version
+    end
+
     def read(namespace, name)
       wrapping_exceptions do
         raw_connection.kv(namespace).read(name)&.data
@@ -52,6 +62,12 @@ module ActiveVault::Adapters
       raise ActiveVault::ConnectionError, err.to_s
     # rescue => err
     #   raise ActiveVault::Error, err.to_s
+    end
+
+    private def health_status
+      wrapping_exceptions do
+        raw_connection.sys.health_status
+      end
     end
   end
 end

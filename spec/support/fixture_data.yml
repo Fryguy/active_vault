@@ -1,0 +1,4 @@
+- namespace: active_vault_tests
+  key: read_test
+  value:
+    value: read_test_value

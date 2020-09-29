@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -e
+
+echo "Starting Vault instance..."
+docker run --rm -p 8200:8200 -e VAULT_DEV_ROOT_TOKEN_ID="smartvm" --cap-add=IPC_LOCK vault &
+
+echo "Waiting for Vault to launch on port 8200..."
+while ! nc -z localhost 8200; do
+  sleep 0.1
+done
+sleep 1
+
+echo "Seeding Vault instance with spec data..."
+bundle exec rake spec:vault:setup
+echo "Seeding Vault instance with spec data...Complete"
+
+wait
