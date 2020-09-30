@@ -4,6 +4,10 @@ RSpec.describe ActiveVault::Adapters::Vault, :vcr do
   let(:namespace)  { VAULT_NAMESPACE }
   let(:connection) { described_class.new("address" => address, "token" => token) }
 
+  it "#raw_connection", :vcr => false do
+    expect(connection.raw_connection).to be_a ::Vault::Client
+  end
+
   describe "#read" do
     it "an existing value" do
       expect(connection.read(namespace, "read_test")).to eq(:value => "read_test_value")
